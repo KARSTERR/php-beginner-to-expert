@@ -25,21 +25,6 @@ Bu depo, PHP'ı öğrenmek için kapsamlı bir rehberdir. Her biri PHP programla
 
 Bu depoyla başlamak için aşağıdaki adımları izleyin.
 
-## Dizin Yapısı
-
-Proje dizin yapısı aşağıdaki gibidir:
-```
-.
-├── css/
-├── php/
-├── html/
-├── hack/
-├── shell/
-├── dockerfile/
-├── docker-compose.yml
-└── README.md
-```
-
 ## Gereksinimler
 
 - Bilgisayarınızda yüklenmiş PHP
