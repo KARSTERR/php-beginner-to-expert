@@ -1,33 +1,33 @@
-# PHP Beginner to Expert
+# PHP Başlangıçtan Uzmanlığa
 
-This repository is designed to teach PHP from the beginner level to the expert level. It contains various examples and exercises to help you learn and practice PHP.
+Bu depo, PHP'ı başlangıç seviyesinden uzman seviyesine kadar öğretmek için tasarlanmıştır. PHP'ı öğrenip pratik yapmanıza yardımcı olacak çeşitli örnekler ve alıştırmalar içerir.
 
-## Table of Contents
+## İçindekiler
 
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-- [Directory Structure](#directory-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Docker Setup](#docker-setup)
-  - [Building the Docker Image](#building-the-docker-image)
-  - [Running the Docker Container](#running-the-docker-container)
-  - [Stopping and Cleaning Up](#stopping-and-cleaning-up)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Giriş](#giriş)
+- [Başlangıç](#başlangıç)
+- [Dizin Yapısı](#dizin-yapısı)
+- [Gereksinimler](#gereksinimler)
+- [Kurulum](#kurulum)
+- [Docker Kurulumu](#docker-kurulumu)
+  - [Docker İmajı Oluşturma](#docker-İmajı-oluşturma)
+  - [Docker Container'ı Çalıştırma](#docker-container-çalıştırma)
+  - [Durdurma ve Temizlik](#durdurma-ve-temizlik)
+- [Kullanım](#kullanım)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
 
-## Introduction
+## Giriş
 
-This repository is a comprehensive guide for learning PHP. It is divided into multiple sections, each focusing on different aspects of PHP programming.
+Bu depo, PHP'ı öğrenmek için kapsamlı bir rehberdir. Her biri PHP programlamanın farklı yönlerine odaklanan birçok bölüme ayrılmıştır.
 
-## Getting Started
+## Başlangıç
 
-Follow the instructions below to get started with this repository.
+Bu depoyla başlamak için aşağıdaki adımları izleyin.
 
-## Directory Structure
+## Dizin Yapısı
 
-The project directory structure is as follows:
+Proje dizin yapısı aşağıdaki gibidir:
 ```
 .
 ├── css/
@@ -40,76 +40,76 @@ The project directory structure is as follows:
 └── README.md
 ```
 
-## Prerequisites
+## Gereksinimler
 
-- PHP installed on your machine
-- A web server such as Apache or Nginx
-- A database server such as MySQL
-- Docker and Docker Compose installed on your machine
+- Bilgisayarınızda yüklenmiş PHP
+- Apache veya Nginx gibi bir web sunucusu
+- MySQL gibi bir veritabanı sunucusu
+- Bilgisayarınızda yüklenmiş Docker ve Docker Compose
 
-## Installation
+## Kurulum
 
-1. Clone the repository:
+1. Depoyu klonlayın:
     ```sh
     git clone https://github.com/KARSTERR/php-beginner-to-expert.git
     ```
-2. Navigate to the project directory:
+2. Proje dizinine gidin:
     ```sh
     cd php-beginner-to-expert
     ```
 
-## Docker Setup
+## Docker Kurulumu
 
-This project includes a `Dockerfile` and `docker-compose.yml` file to make it easy to set up and run the environment using Docker.
+Bu proje, Docker kullanarak ortamı kolayca kurup çalıştırmanız için bir `Dockerfile` ve `docker-compose.yml` dosyası içerir.
 
-### Building the Docker Image
+### Docker İmajı Oluşturma
 
-1. Ensure Docker is running on your machine.
-2. Build the Docker image using the following command:
+1. Docker'ın bilgisayarınızda çalıştığından emin olun.
+2. Aşağıdaki komutla Docker imajını oluşturun:
     ```sh
     docker build -t php-beginner-to-expert .
     ```
-    This will create an image named `php-beginner-to-expert` based on the `Dockerfile` in the project directory.
+    Bu komut, proje dizinindeki `Dockerfile` temel alınarak `php-beginner-to-expert` adında bir imaj oluşturur.
 
-### Running the Docker Container
+### Docker Container'ı Çalıştırma
 
-1. Start the container with Docker Compose:
+1. Docker Compose ile container'ı başlatın:
     ```sh
     docker-compose up -d
     ```
-    This command will:
-    - Start the container in detached mode.
-    - Automatically set up the services defined in `docker-compose.yml`.
+    Bu komut:
+    - Container'ı arka planda (çekilmiş modda) başlatır.
+    - `docker-compose.yml` dosyasında tanımlı hizmetleri otomatik olarak kurar.
 
-2. Access the application in your browser at:
+2. Tarayıcınızda aşağıdaki adresi ziyaret edin:
     ```
     http://localhost:8080
     ```
-    (Change the port in `docker-compose.yml` if necessary.)
+    (Gerekirse `docker-compose.yml` dosyasındaki portu değiştirin.)
 
-### Stopping and Cleaning Up
+### Durdurma ve Temizlik
 
-To stop the running container:
+Çalışan container'ı durdurmak için:
 ```sh
 docker-compose down
 ```
-This will stop and remove the container, but the built image will remain.
+Bu komut, container'ı durdurup kaldırır, ancak oluşturulmuş imajı silmez.
 
-To clean up by removing the built image:
+Oluşturulan imajı silerek temizlemek için:
 ```sh
 docker rmi php-beginner-to-expert
 ```
 
-## Usage
+## Kullanım
 
-1. Start your web server and navigate to the project directory.
-2. Open your browser and go to `http://localhost/php-beginner-to-expert` (or the port defined in your Docker setup).
+1. Web sunucunuzu başlatın ve proje dizinine gidin.
+2. Tarayıcınızda `http://localhost/php-beginner-to-expert` adresini ziyaret edin (veya Docker kurulumunuzda tanımlı portu kullanın).
 
-## Contributing
+## Katkıda Bulunma
 
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) first.
+Katkılar memnuniyetle karşılanır! Lütfen öncelikle [katkı rehberini](CONTRIBUTING.md) okuyun.
 
-## License
+## Lisans
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
